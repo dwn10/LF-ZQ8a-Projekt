@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Publisher, Autor-->
+    <meta name="author" content="Darwin Paz">
+    <!--Page description-->
+    <meta name="description" content="Projekterstellung eines funktionalen Homepage in HTML, CSS, JavaScript.">
+    <!--Marketing Keywords-->
+    <meta name="keywords" content="keywords, Note < = 1">
+
+    <!--Google robots for indexing-->
+    <!--<meta name="robots" content="index, follow">-->
+    
+    <!--Google is not allowed to index the page-->
+    <meta name="robots" content="noindex, nofollow">
+
+    <!--Favicon-->
+    <link rel="icon" type="favicon" href="images/favicon.png" />
+    <title>Muster Pizza Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  </head>
+  <body>
+
+    <header>
+        <nav class="navbar">
+          <h2 class="logo"><a href="images/favicon.png">Muster Pizza</a></h2>
+          <input type="checkbox" id="menu-toggler">
+          <label for="menu-toggler" id="hamburger-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+              <path d="M0 0h24v24H0z" fill="none"/>
+              <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+            </svg>
+            
+          </label>
+          <ul class="all-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menü">Menü</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+  
+      <section class="homepage" id="home">
+        <div class="content">
+          <div class="text">
+            <h1>Gear Up for Adventure</h1>
+            <p>
+             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda corporis aperiam odit. <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          </div>
+          <a href="#menü">Menü</a>
+        </div>
+      </section>
+
+      <section class="menü" id="menü">
+        <h2>Our Portfolio</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, vel.</p>
+        <ul class="cards">
+          <li class="card">
+            <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FtcGluZ3xlbnwwfHwwfHx8MA%3D%3D" alt="img">
+            <h3>Mountain Hiking</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, eveniet fugit.</p>
+          </li>
+          <li class="card">
+            <img src="https://images.unsplash.com/photo-1537905569824-f89f14cceb68?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FtcGluZ3xlbnwwfHwwfHx8MA%3D%3D" alt="img">
+            <h3>Lakeside Camping</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, eveniet fugit.</p>
+          </li>
+          <li class="card">
+            <img src="https://plus.unsplash.com/premium_photo-1676140621026-5c10ec3a875f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y2FtcGluZ3xlbnwwfHwwfHx8MA%3D%3D" alt="img">
+            <h3>Beach Camping</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, eveniet fugit.</p>
+          </li>
+          <li class="card">
+            <img src="https://images.unsplash.com/photo-1496545672447-f699b503d270?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGNhbXBpbmd8ZW58MHx8MHx8fDA%3D" alt="img">
+            <h3>Forest Exploration</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, eveniet fugit.</p>
+          </li>
+          <li class="card">
+            <img src="https://images.unsplash.com/photo-1601134917279-ef70a0a90f18?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGNhbXBpbmd8ZW58MHx8MHx8fDA%3D" alt="img">
+            <h3>RV Camping</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, eveniet fugit.</p>
+          </li>
+          <li class="card">
+            <img src="https://images.unsplash.com/photo-1529385101576-4e03aae38ffc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGNhbXBpbmd8ZW58MHx8MHx8fDA%3D" alt="img">
+            <h3>Desert Camping</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, eveniet fugit.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <div class="row company-info">
+          <h3>Our Story</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur pariatur accusantium id delectus fuga voluptate cumque, adipisci non velit nostrum, excepturi magnam, vitae et rerum.</p>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <div class="row">
+          <div class="col information">
+            <div class="contact-details">
+              <p><i class="fas fa-map-marker-alt"></i> Casino Str 70 | 64283 Darmstadt</p>
+              <p><i class="fas fa-envelope"></i> info@m-pizza.de</p>
+              <p><i class="fas fa-phone"></i> +49 1234 5678</p>
+              
+              <p><i class="fas fa-clock"></i> Di bis So: 11:00 - 23:00 Uhr</p>
+              <p><i class="fas fa-clock"></i> Mo: geschlossen</p>
+              <p><i class="fas fa-globe"></i> www.muster-pizza.de</p>
+            </div>
+          </div>
+          <div class="col form">
+            <form>
+              <input type="text" placeholder="Name*" required>
+              <input type="email" placeholder="Email*" required>
+              <textarea placeholder="Message*" required></textarea>
+              <button id="submit" type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+  
+      <!--SOCIALS-->
+      <div class="user-info__user-links">
+
+        <ul class="links__social">
+
+            <li class="social__option">
+                <a href="#" class="social__link">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+
+            <li class="social__option">
+                <a href="#" class="social__link">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+
+            <li class="social__option">
+                <a href="#" class="social__link">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+      <footer>
+        <div>
+          <span>Copyright © 2024 All Rights Reserved</span>
+          <span class="link">
+              <a href="#">Nach Oben</a>
+              <a href="#contact">Impressum</a>
+          </span>
+        </div>
+      </footer>
+
+  </body>
+</html>
