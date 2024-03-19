@@ -24,8 +24,19 @@ html {
   scroll-behavior: smooth;
 }
 
+.swiper {
+  width: 100%;
+}
+
+.swiper img {
+  width: 100%;
+  height: 255px;
+  object-fit: cover;
+}
+
 body {
   background: var(--color-secondary);
+  margin: 0;
 }
 
 header {
@@ -317,38 +328,54 @@ footer a {
   padding: 0;
 }
 
-/*SOCIAL ICONS*/
-.user-info__links{
-  margin-bottom: 3.6rem;
-}
+/* SOCIAL ICONS */
 
-.links__social{
-  margin-top: 2rem;
-  text-align: center;
+.social-links, .user-links {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
-  gap: 1.6rem;
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
 }
 
-.social__option{
-  height: 3rem;
-  width: 3rem;
-  font-size: 1.8rem;
-  line-height: 3.2rem;
+.social-links img, .user-links img {
+  width: 22px;
+  height: 22px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: transform 0.6s ease-in-out;
 }
 
-/*Social icons animation*/
-.social__option:hover{
-  border-radius: 2rem;
-  transition: all 300ms ease-in-out;
-  background-color: var(--color-background);
-
+.social-links img:hover {
+  transform: scale(1.2);
 }
 
-@media screen and (max-width: 860px) {
+/*--checkbox--*/
+.form__checkbox{
+  margin-left: -0.5rem;
+  margin-top: 0.2rem;
+}
+
+
+
+[type="checkbox"] {
+  cursor: pointer;
+  width: 2px;
+  height: 2px;
+  border: 1.5px solid var(--color-3);
+  appearance: none;
+  background-color: var(--color-white);
+  
+}
+
+[type="checkbox"]:checked {
+  background-color: var(--color-3);
+}
+
+@media screen and (max-width: 768px) {
+  .social-links,
+  .user-links {
+    order: 2;
+  }
+
   .navbar .all-links {
     position: fixed;
     left: -100%;
@@ -368,6 +395,7 @@ footer a {
     font-size: 18px;
   }
 
+  /* Show hamburger button */
   .navbar #hamburger-btn {
     display: block;
   }
