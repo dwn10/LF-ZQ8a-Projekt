@@ -21,18 +21,15 @@
     <link rel="icon" type="favicon" href="images/favicon.png" />
     <title>Muster Pizza Website</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="estilo.css">
-    <script src="app.js" async></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+
 </head>
 
 <body>
 
     <header>
         <nav class="navbar">
-            <h2 class="logo"><a href="#">Muster Pizza</a></h2>
+            <h2 class="logo"><a href="index.html">Muster Pizza</a></h2>
             <input type="checkbox" id="menu-toggler">
             <label for="menu-toggler" id="hamburger-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
@@ -125,32 +122,13 @@
         <div>
             <span>Copyright © 2024 All Rights Reserved</span>
             <span class="link">
-                <a href="#">Nach Oben</a>
                 <a href="impressum.html">Impressum</a>
+                <a href="datenschutz.html">Datenschutzerklärung</a>
+                <a href="#">Nach Oben</a>
             </span>
         </div>
     </footer>
 
-    <script>
-        const menuToggler = document.getElementById('menu-toggler');
-        const allLinks = document.querySelectorAll('.all-links a');
-
-        menuToggler.addEventListener('click', () => {
-            if (menuToggler.checked) {
-                // Add event listener to all links inside "all-links"
-                allLinks.forEach(link => {
-                    link.addEventListener('click', () => {
-                        menuToggler.checked = false; // Uncheck the checkbox to hide navbar
-                    });
-                });
-            } else {
-                // Remove event listener on uncheck (not strictly necessary here)
-                allLinks.forEach(link => {
-                    link.removeEventListener('click', () => { }); // Empty function to remove
-                });
-            }
-        });
-    </script>
 </body>
 
 </html>

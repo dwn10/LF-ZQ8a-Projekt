@@ -6,6 +6,7 @@
   --color-principal: rgb(0, 255, 234);
   --color-secondary: #f3efbe;
   --color-white:#fff;
+  --color-green:#31ea11;
   --color-3: #e9c10f;
   --color-background: #1a1b1c;
   --color-btn-2:#525252;
@@ -22,6 +23,42 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+.neon-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*centerthetext*/text-align: center;
+  /*centeralignthetexthorizontally*/margin-top: -10rem;
+  text-transform: uppercase;
+  font-size: 5rem;
+  cursor: pointer;
+  transition: .3s linear;
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--color-green);
+  background-image: linear-gradient(to left,black, rgb(149, 226, 33), black, rgb(35, 31, 31));
+  background-size: 200%;
+  -webkit-background-clip: text;
+  animation: move 7s linear infinite;
+  -webkit-animation: move 7s linear infinite;
+}
+
+@keyframes move {
+  100% {
+      background-position: 2000px;
+  }
+}
+
+.neon-text:hover{
+  color: var(--color-green);
+  text-shadow: 0 0 10px rgba(0, 255, 17, 0.5),
+              0 0 20px rgba(0, 255, 17, 0.5),
+              0 0 40px rgba(0, 255, 17, 0.5),
+              0 0 80px rgba(0, 255, 17, 0.5),
+              0 0 160px rgba(0, 255, 17, 0.5),
+              0 0 320px rgba(0, 255, 17, 0.5);
 }
 
 body {
@@ -153,39 +190,6 @@ header a:hover, footer a:hover {
 .content a:hover {
   color: var(--color-background);
   background: var(--color-3);
-}
-
-.content .dinamic{
-  margin-left: 15px;
-  line-height: 90px;
-  height: 90px;
-  overflow: hidden;
-}
-.dinamic li{
-  color: var(--color-3);
-  list-style: none;
-  font-size: 30px;
-  font-weight: 500;
-  animation: slide 6s steps(4) infinite;
-}
-.dinamic li span::after{
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  border-left: 2px solid #fc6d6d;
-  animation: typing 1.5s steps(10) infinite;
-  background: var(--color-secondary);
-}
-.dinamic li span{
-  position: relative;
-}
-@keyframes typing{
-  100%{
-    left: 100%;
-    margin: 0 -35px 0 35px;
-  }
 }
 
 section {
@@ -326,6 +330,21 @@ section .cards .card {
   color: var(--color-3);
 }
 
+/*--map--*/
+.contact__map{
+  width: 80%;
+  min-height: 12rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+/*map iframe*/
+.contact__iframe{
+  width: 80%;
+  height: 14rem;
+}
+
 footer {
   width: 100%;
   display: flex;
@@ -368,28 +387,6 @@ footer a {
 
 .social-links img:hover {
   transform: scale(1.2);
-}
-
-/*--checkbox--*/
-.form__checkbox{
-  margin-left: -0.5rem;
-  margin-top: 0.2rem;
-}
-
-
-
-[type="checkbox"] {
-  cursor: pointer;
-  width: 2px;
-  height: 2px;
-  border: 1.5px solid var(--color-3);
-  appearance: none;
-  background-color: var(--color-white);
-  
-}
-
-[type="checkbox"]:checked {
-  background-color: var(--color-3);
 }
 
 @media screen and (max-width: 768px) {
@@ -437,6 +434,12 @@ footer a {
     margin-bottom: 10px;
   }
 
+  .neon-text{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
   .homepage .content .text {
     font-size: 17px;
   }
@@ -461,6 +464,12 @@ footer a {
   footer a {
     height: 0;
   }
+  .contact__iframe{
+    width: 100%;
+  }
+
+  .contact__map{
+    width: 100%;
 }
 
 @media screen and (max-width: 560px) {
@@ -469,4 +478,17 @@ footer a {
     margin-bottom: 30px;
   }
 
+  .neon-text{
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .contact__iframe{
+    width: 100%;
+  }
+
+  .contact__map{
+    width: 100%;
+  }
 }

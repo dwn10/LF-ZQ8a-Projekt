@@ -20,9 +20,9 @@
     <link rel="icon" type="favicon" href="images/favicon.png" />
     <title>Muster Pizza Website</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="estilo.css">
-    <script src="app.js" async></script>
+    <link rel="stylesheet" href="loader.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+
   </head>
   <body>
 
@@ -57,7 +57,8 @@
       <section class="homepage" id="home">
         <div class="content">
           <div class="text">
-            <h1>Willkommen in der Pizzeria</h1>
+            <h1>Willkommen</h1>
+            <h2 class="neon-text">Pizzeria</h2>
             <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda corporis aperiam odit. <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
           </div>
@@ -113,7 +114,12 @@
 
       <section class="contact" id="contact">
         <h2>Contact Us</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <!--map-->
+      <div class="contact__map" id="load-iframe-map">
+        <!--<iframe class="contact__iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d374.8027100445434!2d8.630962223213627!3d49.87416942915357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd7082280c43c9%3A0x57f87ba933adbb81!2sGFN%20GmbH!5e1!3m2!1ses-419!2sde!4v1695273996555!5m2!1ses-419!2sde"></iframe>-->
+        <span class="loader"></span>
+      </div>
+      
         <div class="row">
           <div class="col information">
             <div class="contact-details">
@@ -137,35 +143,53 @@
         </div>
       </section>
 
+      <script>
+        const menuToggler = document.getElementById('menu-toggler');
+    const allLinks = document.querySelectorAll('.all-links a');
+
+        menuToggler.addEventListener('click', () => {
+            if (menuToggler.checked) {
+        // Add event listener to all links inside "all-links"
+        allLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggler.checked = false; // Uncheck the checkbox to hide navbar
+            });
+        });
+            } else {
+        // Remove event listener on uncheck (not strictly necessary here)
+        allLinks.forEach(link => {
+            link.removeEventListener('click', () => { }); // Empty function to remove
+        });
+            }
+        });
+      </script>
+
+      <script>
+        //Script for map + loader = 3000ms
+document.addEventListener("DOMContentLoaded",(event) =>{
+    setTimeout(() => {
+    document.querySelector("#load-iframe-map").innerHTML = `
+        <iframe class="contact__iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d374.8027100445434!2d8.630962223213627!3d49.87416942915357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd7082280c43c9%3A0x57f87ba933adbb81!2sGFN%20GmbH!5e1!3m2!1ses-419!2sde!4v1695273996555!5m2!1ses-419!2sde"></iframe>`;
+    }, 3000);
+});
+
+//Contact form return clean
+function validar(){
+    console.log('E-mail sent');
+    return false;
+}
+      </script>
+
       <footer>
         <div>
           <span>Copyright © 2024 All Rights Reserved</span>
           <span class="link">
-              <a href="#">Nach Oben</a>
               <a href="impressum.html">Impressum</a>
+              <a href="datenschutz.html">Datenschutzerklärung</a>
+              <a href="#">Nach Oben</a>
           </span>
         </div>
       </footer>
 
-      <script>
-      const menuToggler = document.getElementById('menu-toggler');
-      const allLinks = document.querySelectorAll('.all-links a');
-
-      menuToggler.addEventListener('click', () => {
-        if (menuToggler.checked) {
-          // Add event listener to all links inside "all-links"
-          allLinks.forEach(link => {
-            link.addEventListener('click', () => {
-              menuToggler.checked = false; // Uncheck the checkbox to hide navbar
-            });
-          });
-        } else {
-          // Remove event listener on uncheck (not strictly necessary here)
-          allLinks.forEach(link => {
-            link.removeEventListener('click', () => {}); // Empty function to remove
-          });
-        }
-      });
-      </script>
   </body>
 </html>
