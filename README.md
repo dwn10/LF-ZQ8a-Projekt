@@ -26,15 +26,13 @@ const Projects = {
 ## HTML:
 Webseite für eine Pizzeria namens Muster Pizza.
 
-Der Code enthält verschiedene Abschnitte, die den Inhalt der Webseite strukturieren. Hier ist eine Zusammenfassung der Abschnitte:
+Der Code enthält verschiedene Abschnitte, die den Inhalt der Webseite strukturieren. 
+- Hier ist eine Zusammenfassung der Abschnitte:
 
-<head>: Dieser Abschnitt enthält Metadaten über die Webseite, die nicht direkt auf der Webseite angezeigt werden.
-
-<header>: Enthält den Kopfbereich der Webseite, einschließlich des Logos, der Navigation und der Social-Media-Links.
-
-<section>: Die Webseite enthält mehrere Abschnitte, z. B. für die Startseite (home), die Speisekarte (menü), Informationen über das Unternehmen (about) und Kontaktinformationen (contact).
-
-<footer>: Den Fußbereich der Webseite, einschließlich Copyright-Informationen und Links zu rechtlichen Dokumenten.
+- `head:` Dieser Abschnitt enthält Metadaten über die Webseite, die nicht direkt auf der Webseite angezeigt werden.
+- `header:` Enthält den Kopfbereich der Webseite, einschließlich des Logos, der Navigation und der Social-Media-Links.
+- `section:` Die Webseite enthält mehrere Abschnitte, z. B. für die Startseite (home), die Speisekarte (menü), Informationen über das Unternehmen (about) und Kontaktinformationen (contact).
+- `footer:` Den Fußbereich der Webseite, einschließlich Copyright-Informationen und Links zu rechtlichen Dokumenten.
 
 ## JavaScript Funktionen:
 
