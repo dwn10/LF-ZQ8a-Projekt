@@ -132,7 +132,7 @@ header a:hover, footer a:hover {
   background-position: center 65%;
   background-size: cover;
   background-attachment: fixed;
-  filter: brightness(50%);
+  filter: brightness(70%);
   overflow: hidden;
   display: flex;
   align-items: center;
