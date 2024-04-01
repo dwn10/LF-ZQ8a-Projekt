@@ -90,7 +90,7 @@ Dieser Code definiert einen `CSS-Stil namens ".neon-Text"`, der verwendet wird, 
 - `-webkit-text-stroke` und `-webkit-background-clip: text` (vendorexifizierte Eigenschaften) wenden den Strich und den Farbverlauf nur auf den Text an.
 - Die Keyframe-Animation `"move"` animiert die Bewegung des Farbverlaufs.
 
-## Animation "move":
+## Animation move:
 
 Die Animation "move" verschiebt die Position des Hintergrundbildes über 7 Sekunden linear von 0% auf 2000% der Textbreite. Dadurch entsteht die Illusion eines sich bewegenden Neonlichts.
 
