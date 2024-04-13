@@ -110,10 +110,10 @@ Definiert die Stile für eine Ladeanimation (.loader). Die Animation erzeugt ein
 ##
 ## Projekt-Screenshots
 
-<a href="#"><img src="./images/1_web.JPG" style="height: 80%; width:80%;"/></a>
-<a href="#"><img src="./images/2_web.JPG" style="height: 80%; width:80%;"/></a>
-<a href="#"><img src="./images/3_web.JPG" style="height: 80%; width:80%;"/></a>
-<a href="#"><img src="./images/4_web.JPG" style="height: 50%; width:50%;"/></a>
+<a href="./images/1_web.JPG"><img src="./images/1_web.JPG" style="height: 80%; width:80%;"/></a>
+<a href="./images/2_web.JPG"><img src="./images/2_web.JPG" style="height: 80%; width:80%;"/></a>
+<a href="./images/3_web.JPG"><img src="./images/3_web.JPG" style="height: 80%; width:80%;"/></a>
+<a href="./images/4_web.JPG"><img src="./images/4_web.JPG" style="height: 50%; width:50%;"/></a>
 
 ## Credits:
 
