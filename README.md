@@ -110,10 +110,10 @@ Definiert die Stile für eine Ladeanimation (.loader). Die Animation erzeugt ein
 ##
 ## Projekt-Screenshots
 
-<a href="https://media.discordapp.net/attachments/1214730549969813504/1220142619858829412/web-home.JPG?ex=660ddd5d&is=65fb685d&hm=d156c79fcfdcc2aeba6a7d94ccab6b333e0d9059f6aa88623d76aa301169d352&=&format=webp&width=904&height=579"><img src="https://media.discordapp.net/attachments/1214730549969813504/1220142619858829412/web-home.JPG?ex=660ddd5d&is=65fb685d&hm=d156c79fcfdcc2aeba6a7d94ccab6b333e0d9059f6aa88623d76aa301169d352&=&format=webp&width=904&height=579" style="height: 80%; width:80%;"/></a>
-<a href="https://media.discordapp.net/attachments/1214730549969813504/1220142620228059216/web-menu.JPG?ex=660ddd5d&is=65fb685d&hm=a771200c1b18600239273e02119828318c797c3f080e9ef170bda6066cf1e9a9&=&format=webp&width=864&height=579"><img src="https://media.discordapp.net/attachments/1214730549969813504/1220142620228059216/web-menu.JPG?ex=660ddd5d&is=65fb685d&hm=a771200c1b18600239273e02119828318c797c3f080e9ef170bda6066cf1e9a9&=&format=webp&width=864&height=579" style="height: 80%; width:80%;"/></a>
-<a href="https://media.discordapp.net/attachments/1214730549969813504/1220142620693631039/web-contact.JPG?ex=660ddd5d&is=65fb685d&hm=d4be069b08e75adabc812e39dc2af8cf43f35b8caea9dcd879e3821efaee4041&=&format=webp&width=842&height=579"><img src="https://media.discordapp.net/attachments/1214730549969813504/1220142620693631039/web-contact.JPG?ex=660ddd5d&is=65fb685d&hm=d4be069b08e75adabc812e39dc2af8cf43f35b8caea9dcd879e3821efaee4041&=&format=webp&width=842&height=579" style="height: 80%; width:80%;"/></a>
-<a href="https://media.discordapp.net/attachments/1214730549969813504/1220142620949348443/web-responsive.JPG?ex=660ddd5d&is=65fb685d&hm=c017605133c4f1791a038f641e30c279d366d95f0f92a93cf2451d41bc2c889f&=&format=webp&width=320&height=579"><img src="https://media.discordapp.net/attachments/1214730549969813504/1220142620949348443/web-responsive.JPG?ex=660ddd5d&is=65fb685d&hm=c017605133c4f1791a038f641e30c279d366d95f0f92a93cf2451d41bc2c889f&=&format=webp&width=320&height=579" style="height: 50%; width:50%;"/></a>
+<a href="#"><img src="./images/1_web.JPG" style="height: 80%; width:80%;"/></a>
+<a href="#"><img src="./images/2_web.JPG" style="height: 80%; width:80%;"/></a>
+<a href="#"><img src="./images/3_web.JPG" style="height: 80%; width:80%;"/></a>
+<a href="#"><img src="./images/4_web.JPG" style="height: 50%; width:50%;"/></a>
 
 ## Credits:
 
